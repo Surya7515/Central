@@ -18,10 +18,4 @@ name: Network Getting Started First Playbook Extended
       vyos.vyos.vyos_config:
         backup: yes
         lines:
-          - set system host-name vyos-changed
-
-    - name: Get changed config for VyOS devices
-      vyos.vyos.vyos_facts:
-        gather_subset: all
-
-
+          - set system host-name vyos-changed 
